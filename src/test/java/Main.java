@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
- public class Main {
+ public class Main{
 
         private static WebDriver driver;
 
@@ -30,4 +30,4 @@ import org.testng.annotations.Test;
             driver.quit();
         }
     }
-}
+
