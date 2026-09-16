@@ -13,15 +13,15 @@ import org.testng.annotations.Test;
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             Thread.sleep(2000);
-            driver.get("https://sandhyabshetty.github.io/lab1/");
+            driver.get("https://github.com/sandhyabshetty/lab1");
         }
 
         @Test
         public void titleValidationTest() {
             String actualTitle = driver.getTitle();
-            String expectedTitle = "Tripillar Solutions";
+            String expectedTitle = "My simple website";
             Assert.assertEquals(actualTitle, expectedTitle);
-            Assert.assertTrue(true, "Title should contain 'Tripillar'");
+            Assert.assertTrue(true, "Title should contain 'Simple'");
         }
 
         @AfterTest
